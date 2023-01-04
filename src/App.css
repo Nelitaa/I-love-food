@@ -1,11 +1,11 @@
 body {
   padding: 0;
   margin: 0;
+  color: #fff;
 }
 
 header {
   background-color: #EC4C8A;
-  color: #fff;
 }
 
 nav {
@@ -17,4 +17,34 @@ nav {
 .navigation-icons {
   background-color: #EC4C8A;
   border: none;
+}
+
+.total-world {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FD5294;
+}
+
+.world-map-img {
+  width: 45%;
+}
+
+.total-world-container-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 3%;
+}
+
+.total-world-text {
+  font-weight: bold;
+  font-size: small;
+  margin-bottom: 0;
+}
+
+.total-world-views {
+  font-size: x-small;
+  margin-top: 0;
 }

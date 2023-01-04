@@ -1,4 +1,20 @@
-* {
+body {
   padding: 0;
   margin: 0;
+}
+
+header {
+  background-color: #EC4C8A;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation-icons {
+  background-color: #EC4C8A;
+  border: none;
 }

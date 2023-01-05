@@ -1,44 +1,21 @@
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Country from './Country';
-import Country11 from '../assets/images/country-1-1.png';
-import Country12 from '../assets/images/country-1-2.png';
-import Country13 from '../assets/images/country-1-3.png';
-import Country21 from '../assets/images/country-2-1.png';
-import Country22 from '../assets/images/country-2-2.png';
-import Country23 from '../assets/images/country-2-3.png';
 
-const Countries = () => (
-  <ul className="countries-container">
-    <Country
-      idCountry={1}
-      NameCountry="Argentina"
-      ImageCountry={Country11}
-    />
-    <Country
-      idCountry={2}
-      NameCountry="Bolivia"
-      ImageCountry={Country12}
-    />
-    <Country
-      idCountry={3}
-      NameCountry="Brazil"
-      ImageCountry={Country13}
-    />
-    <Country
-      idCountry={4}
-      NameCountry="Chile"
-      ImageCountry={Country21}
-    />
-    <Country
-      idCountry={5}
-      NameCountry="Colombia"
-      ImageCountry={Country22}
-    />
-    <Country
-      idCountry={6}
-      NameCountry="Ecuador"
-      ImageCountry={Country23}
-    />
-  </ul>
-);
+const Countries = () => {
+  const countries = useSelector((state) => state.countries.countries);
+
+  return (
+    <ul className="countries-container">
+      {countries.map((country) => (
+        <Country
+          key={country.id}
+          name={country.name}
+          image={country.image}
+        />
+      ))}
+    </ul>
+  );
+};
 
 export default Countries;

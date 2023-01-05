@@ -10,6 +10,7 @@ const Countries = () => {
       {countries.map((country) => (
         <Country
           key={country.id}
+          id={country.id}
           name={country.name}
           image={country.image}
         />

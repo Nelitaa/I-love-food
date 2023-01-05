@@ -76,6 +76,16 @@ nav {
   background-color: #CC4074;
 }
 
+.country-container:nth-child(25),
+.country-container:nth-child(24),
+.country-container:nth-child(21),
+.country-container:nth-child(20),
+.country-container:nth-child(17),
+.country-container:nth-child(16),
+.country-container:nth-child(13),
+.country-container:nth-child(12),
+.country-container:nth-child(9),
+.country-container:nth-child(8),
 .country-container:nth-child(5),
 .country-container:nth-child(4),
 .country-container:nth-child(1) {

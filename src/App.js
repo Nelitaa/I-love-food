@@ -1,11 +1,17 @@
+import React from 'react';
+import { useDispatch } from 'react-redux';
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Home from './pages/Home';
 import List from './pages/List';
 import Details from './pages/Details';
+import { fetchCountries } from './redux/countries/countries';
 
 function App() {
+  const dispatch = useDispatch();
+  dispatch(fetchCountries());
+
   return (
     <div>
       <Header />

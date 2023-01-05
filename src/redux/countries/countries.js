@@ -1,3 +1,5 @@
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import CountryService from '../../services/CountryService';
 import Country11 from '../../assets/images/country-1-1.png';
 import Country12 from '../../assets/images/country-1-2.png';
 import Country13 from '../../assets/images/country-1-3.png';
@@ -7,47 +9,36 @@ import Country23 from '../../assets/images/country-2-3.png';
 
 const initialState = {
   countries: [
-    {
-      id: 1,
-      name: 'Argentina',
-      image: Country11,
-      views: 1000,
-    },
-    {
-      id: 2,
-      name: 'Brazil',
-      image: Country12,
-      views: 7000,
-    },
-    {
-      id: 3,
-      name: 'Chile',
-      image: Country13,
-      views: 2000,
-    },
-    {
-      id: 4,
-      name: 'Colombia',
-      image: Country21,
-      views: 3000,
-    },
-    {
-      id: 5,
-      name: 'Mexico',
-      image: Country22,
-      views: 4000,
-    },
-    {
-      id: 6,
-      name: 'Peru',
-      image: Country23,
-      views: 5000,
-    },
+    { id: 1433, image: Country11, name: 'name' }, { id: 2346, image: Country12, name: 'name' }, { id: 3789, image: Country13, name: 'name' },
+    { id: 434, image: Country21, name: 'name' }, { id: 587, image: Country22, name: 'name' }, { id: 623, image: Country23, name: 'name' },
+    { id: 346, image: Country12, name: 'name' }, { id: 13, image: Country11, name: 'name' }, { id: 44, image: Country21, name: 'name' },
+    { id: 63, image: Country23, name: 'name' }, { id: 6666, image: Country12, name: 'name' }, { id: 53, image: Country11, name: 'name' },
+    { id: 23462, image: Country22, name: 'name' }, { id: 3590, image: Country13, name: 'name' }, { id: 4532, image: Country23, name: 'name' },
+    { id: 5871, image: Country22, name: 'name' }, { id: 7, image: Country22, name: 'name' }, { id: 999, image: Country13, name: 'name' },
+    { id: 143, image: Country12, name: 'name' }, { id: 34, image: Country21, name: 'name' }, { id: 111, image: Country11, name: 'name' },
+    { id: 113, image: Country23, name: 'name' }, { id: 904, image: Country13, name: 'name' }, { id: 56, image: Country11, name: 'name' },
+    { id: 35, image: Country22, name: 'name' }, { id: 78, image: Country13, name: 'name' },
   ],
 };
 
+export const fetchCountries = createAsyncThunk(
+  'countries/fetchCountries',
+  async () => {
+    const response = await CountryService.getAll();
+    return response.data.meals;
+  },
+);
+
 const countriesReducer = (state = initialState, action) => {
   switch (action.type) {
+    case 'countries/fetchCountries/fulfilled':
+      return {
+        ...state,
+        countries: state.countries.map((country, index) => ({
+          ...country,
+          name: action.payload[index].strArea,
+        })),
+      };
     default:
       return state;
   }

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap');
+
 body {
   padding: 0;
   margin: 0;
   color: #fff;
+  font-family: 'Lato', sans-serif;
 }
 
 header {
@@ -15,8 +18,9 @@ nav {
 }
 
 .navigation-icons {
-  background-color: #EC4C8A;
+  background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .total-world {
@@ -38,13 +42,48 @@ nav {
   padding: 3%;
 }
 
-.total-world-text {
+.country-text {
   font-weight: bold;
   font-size: small;
-  margin-bottom: 0;
+  margin: 0;
 }
 
-.total-world-views {
+.text-views {
   font-size: x-small;
-  margin-top: 0;
+  margin: 0;
+}
+
+.recipes-country {
+  background-color: #DF4682;
+  padding: 2%;
+  font-size: x-small;
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
+}
+
+.country-container {
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  width: 44%;
+  padding: 3%;
+  background-color: #CC4074;
+}
+
+.country-container:nth-child(5),
+.country-container:nth-child(4),
+.country-container:nth-child(1) {
+  background-color: #DB4781;
+}
+
+.show-icon {
+  border: none;
+  align-self: flex-end;
+  background-color: transparent;
+  cursor: pointer;
 }

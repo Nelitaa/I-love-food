@@ -4,6 +4,7 @@ import Country12 from '../assets/images/country-1-2.png';
 import Country13 from '../assets/images/country-1-3.png';
 import Country21 from '../assets/images/country-2-1.png';
 import Country22 from '../assets/images/country-2-2.png';
+import Country23 from '../assets/images/country-2-3.png';
 
 const Countries = () => (
   <ul className="countries-container">
@@ -31,6 +32,11 @@ const Countries = () => (
       idCountry={5}
       NameCountry="Colombia"
       ImageCountry={Country22}
+    />
+    <Country
+      idCountry={6}
+      NameCountry="Ecuador"
+      ImageCountry={Country23}
     />
   </ul>
 );

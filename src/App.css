@@ -32,6 +32,7 @@ nav {
 
 .world-map-img {
   width: 45%;
+  padding: 10% 0 10% 1%;
 }
 
 .total-world-container-text {
@@ -85,5 +86,45 @@ nav {
   border: none;
   align-self: flex-end;
   background-color: transparent;
+  margin-left: 15%;
   cursor: pointer;
+}
+
+.list-recipes {
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #CC4074;
+  padding: 5%;
+}
+
+.recipe-container:nth-child(even) {
+  background-color: #DB4781;
+}
+
+.recipe-list-container-views {
+  display: flex;
+  align-items: center;
+}
+
+.recipe-views {
+  margin-right: 10%;
+}
+
+.name-country {
+  font-weight: bold;
+  font-size: large;
+  margin: 0;
+}
+
+.total-country {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #DB4781;
 }

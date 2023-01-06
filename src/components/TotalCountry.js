@@ -1,13 +1,22 @@
-import Country11 from '../assets/images/country-1-1.png';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-const TotalCountry = () => (
+const TotalCountry = ({ countrySelected }) => (
   <section className="total-country">
-    <img className="world-map-img" src={Country11} alt="Country" />
+    <img className="world-map-img" src={countrySelected.image} alt="World Map" />
     <div className="total-world-container-text">
-      <h2 className="name-country">Argentina</h2>
-      <p className="text-views">954</p>
+      <h2 className="name-country">{countrySelected.name}</h2>
+      <p className="text-views">{countrySelected.id}</p>
     </div>
   </section>
 );
 
 export default TotalCountry;
+
+TotalCountry.propTypes = {
+  countrySelected: PropTypes.shape({
+    id: PropTypes.number,
+    name: PropTypes.string,
+    image: PropTypes.string,
+  }).isRequired,
+};

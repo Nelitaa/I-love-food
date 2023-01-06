@@ -1,3 +1,5 @@
+add more unit test
+
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
@@ -12,14 +14,15 @@
   - [Usage](#usage)
   - [Run tests](#run-tests)
 - [👥 Author](#authors)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [COVID-19_Statistics] <a name="about-project"></a>
+# 📖 [I_love_food] <a name="about-project"></a>
 
-**[COVID-19_Statistics]** is a...
+**[I_Love_Food]** is a mobile web application for all fans of food. It is a Single Page App (SPA) that allows users to see the views of the recipes of meals by country arround the world. to check a list of metrics (numeric values) that you will create making use of React and Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -103,6 +106,12 @@ To run tests, run the following command:
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Add_more_unit_tests]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
@@ -127,6 +136,6 @@ I would like to thank Microverse and [Nelson Sakwa en Behance](https://www.behan
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](./LICENSE.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

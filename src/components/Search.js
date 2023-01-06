@@ -1,4 +1,3 @@
-/* eslint-disable */
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import SearchIcon from '../assets/images/search-line.png';
@@ -15,7 +14,7 @@ function Search() {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    let searchCountries = [];
+    const searchCountries = [];
     const country = countries.find((country) => country.name === search);
     searchCountries.push(country);
     if (country) {

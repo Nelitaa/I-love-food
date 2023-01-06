@@ -1,5 +1,6 @@
 import { useSelector } from 'react-redux';
 import WorldMap from '../assets/images/world-map.png';
+import Search from './Search';
 
 const TotalWorld = () => {
   const countries = useSelector((state) => state.countries.countries);
@@ -17,6 +18,7 @@ const TotalWorld = () => {
           <span className="recipe-views">{totalViews}</span>
           views
         </p>
+        <Search />
       </div>
     </section>
   );

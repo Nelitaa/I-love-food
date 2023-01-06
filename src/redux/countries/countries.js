@@ -29,6 +29,11 @@ export const fetchCountries = createAsyncThunk(
   },
 );
 
+export const searchCountry = (country) => ({
+  type: 'countries/searchCountry',
+  payload: country,
+});
+
 const countriesReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'countries/fetchCountries/fulfilled':
@@ -38,6 +43,10 @@ const countriesReducer = (state = initialState, action) => {
           ...country,
           name: action.payload[index].strArea,
         })),
+      };
+    case 'countries/searchCountry':
+      return {
+        countries: action.payload,
       };
     default:
       return state;

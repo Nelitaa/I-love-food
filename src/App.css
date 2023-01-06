@@ -146,3 +146,17 @@ nav {
   align-items: center;
   background-color: #DB4781;
 }
+
+form {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+}
+
+input {
+  background-color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 3%;
+  font-size: xx-small;
+}

@@ -17,7 +17,7 @@ const List = () => {
     <div>
       <TotalCountry countrySelected={countrySelected} />
       <div className="recipes-country">RECIPE LIST</div>
-      <Recipes />
+      <Recipes countrySelected={countrySelected} />
     </div>
   );
 };

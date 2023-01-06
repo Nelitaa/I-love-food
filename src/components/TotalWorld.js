@@ -14,7 +14,7 @@ const TotalWorld = () => {
           from around the world!
         </p>
         <p className="text-views">
-          <span>{totalViews}</span>
+          <span className="recipe-views">{totalViews}</span>
           views
         </p>
       </div>

@@ -121,7 +121,7 @@ If you like this project give us a ⭐️!.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse.
+I would like to thank Microverse and [Nelson Sakwa en Behance](https://www.behance.net/sakwadesignstudio)(Original design idea).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

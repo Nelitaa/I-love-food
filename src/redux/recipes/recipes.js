@@ -1,40 +1,30 @@
+import { createAsyncThunk } from '@reduxjs/toolkit';
+import RecipeService from '../../services/RecipeService';
+
 const initialState = {
-  recipes: [
-    {
-      id: 1,
-      name: 'Pasta',
-      view: 234,
-    },
-    {
-      id: 2,
-      name: 'Pizza',
-      view: 123,
-    },
-    {
-      id: 3,
-      name: 'Hamburgers',
-      view: 345,
-    },
-    {
-      id: 4,
-      name: 'Salad',
-      view: 456,
-    },
-    {
-      id: 5,
-      name: 'Sandwich',
-      view: 567,
-    },
-    {
-      id: 6,
-      name: 'Soup',
-      view: 678,
-    },
-  ],
+  recipes: [],
 };
+
+export const fetchRecipes = createAsyncThunk(
+  'recipes/fetchRecipes',
+  async () => {
+    const response = await RecipeService.getAll();
+    const listRecipes = response.data.meals.map((recipe) => ({
+      id: recipe.idMeal,
+      name: recipe.strMeal,
+      area: recipe.strArea,
+    }));
+    return listRecipes;
+  },
+);
 
 const recipesReducer = (state = initialState, action) => {
   switch (action.type) {
+    case fetchRecipes.fulfilled.type:
+      return {
+        ...state,
+        recipes: action.payload,
+      };
     default:
       return state;
   }

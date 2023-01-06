@@ -5,10 +5,12 @@ import Header from './components/Header';
 import Home from './pages/Home';
 import List from './pages/List';
 import { fetchCountries } from './redux/countries/countries';
+import { fetchRecipes } from './redux/recipes/recipes';
 
 function App() {
   const dispatch = useDispatch();
   dispatch(fetchCountries());
+  dispatch(fetchRecipes());
 
   return (
     <div>

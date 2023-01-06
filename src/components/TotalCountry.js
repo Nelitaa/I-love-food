@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const TotalCountry = ({ countrySelected }) => (
-  <section className="total-country">
+  <section className={countrySelected.id % 2 === 0 ? 'total-country' : 'total-country-second-background'}>
     <img className="world-map-img" src={countrySelected.image} alt="World Map" />
     <div className="total-world-container-text">
       <h2 className="name-country">{countrySelected.name}</h2>

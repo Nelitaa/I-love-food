@@ -13,7 +13,6 @@ function Search() {
     event.preventDefault();
     setSearch(event.target.value);
   };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     let searchCountries = [];
@@ -22,7 +21,6 @@ function Search() {
     if (country) {
       dispatch(searchCountry(searchCountries));
     } else {
-      alert('Country not found');
       setSearch('');
     }
   };

@@ -3,8 +3,8 @@ import WorldMap from '../assets/images/world-map.png';
 import Search from './Search';
 
 const TotalWorld = () => {
-  const countries = useSelector((state) => state.countries.countries);
-  const totalViews = countries.reduce((total, country) => total + country.id, 0);
+  const recipes = useSelector((state) => state.recipes.recipes);
+  const totalViews = recipes.reduce((total, country) => total + +country.id, 0);
 
   return (
     <section className="total-world">

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import SearchIcon from '../assets/images/search-line.png';
-import { fetchCountries, searchCountry } from '../redux/countries/countries';
+import { searchCountry } from '../redux/countries/countries';
 
 function Search() {
   const [search, setSearch] = useState('');

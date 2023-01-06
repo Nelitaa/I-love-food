@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders Header component 1`] = `
+<DocumentFragment>
+  <header>
+    <nav>
+      <button
+        class="navigation-icons"
+        type="button"
+      >
+        <a
+          href="/"
+        >
+          <img
+            alt="Go back icon"
+            src="GoBackIcon.png"
+          />
+        </a>
+      </button>
+      <h1>
+        I Love Food
+      </h1>
+      <div>
+        <button
+          class="navigation-icons"
+          type="button"
+        >
+          <img
+            alt="Go back icon"
+            src="MicIcon.png"
+          />
+        </button>
+        <button
+          class="navigation-icons"
+          type="button"
+        >
+          <img
+            alt="Go back icon"
+            src="SettingsIcon.png"
+          />
+        </button>
+      </div>
+    </nav>
+  </header>
+</DocumentFragment>
+`;

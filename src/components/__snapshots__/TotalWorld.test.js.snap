@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TotalWorld should render TotalWorld component 1`] = `
+<div>
+  <section
+    class="total-world"
+  >
+    <img
+      alt="world map"
+      class="world-map-img"
+      src="world-map.png"
+    />
+    <div
+      class="total-world-container-text"
+    >
+      <p
+        class="country-text"
+      >
+        Treat your taste buds to a flavorful trip with our recipes for cuisines from around the world!
+      </p>
+      <p
+        class="text-views"
+      >
+        <span
+          class="recipe-views"
+        >
+          0
+        </span>
+        views
+      </p>
+      <form>
+        <input
+          placeholder="Search by country"
+          type="text"
+          value=""
+        />
+        <button
+          class="navigation-icons"
+          type="submit"
+        >
+          <img
+            alt="Search icon"
+            src="search-line.png"
+          />
+        </button>
+      </form>
+    </div>
+  </section>
+</div>
+`;

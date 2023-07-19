@@ -22,7 +22,7 @@ add more unit test
 
 # 📖 I love food <a name="about-project"></a>
 
-**I_Love_Food** is a mobile web application for all fans of food. It is a Single Page App (SPA) that allows users to see the views of the recipes of meals by country arround the world. to check a list of metrics (numeric values) that you will create making use of React and Redux.
+**I Love Food** is a mobile web application for all fans of food. It is a Single Page App (SPA) that allows users to see the views of the recipes of meals by country arround the world. to check a list of metrics (numeric values) that you will create making use of React and Redux.
 
 ## 🛠 Built With <a name="built-with"></a>
 
